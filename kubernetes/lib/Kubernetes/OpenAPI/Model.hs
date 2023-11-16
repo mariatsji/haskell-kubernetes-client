@@ -56,7 +56,6 @@ import qualified Web.HttpApiData as WH
 import Control.Applicative ((<|>))
 import Control.Applicative (Alternative)
 import Data.Function ((&))
-import Data.Monoid ((<>))
 import Data.Text (Text)
 import Prelude (($),(/=),(.),(<$>),(<*>),(>>=),(=<<),Maybe(..),Bool(..),Char,Double,FilePath,Float,Int,Integer,String,fmap,undefined,mempty,maybe,pure,Monad,Applicative,Functor)
 

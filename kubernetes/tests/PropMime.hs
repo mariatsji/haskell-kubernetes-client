@@ -7,7 +7,6 @@ module PropMime where
 
 import Data.Aeson
 import Data.Aeson.Types (parseEither)
-import Data.Monoid ((<>))
 import Data.Typeable (Proxy(..), typeOf, Typeable)
 import qualified Data.ByteString.Lazy.Char8 as BL8
 import Test.Hspec

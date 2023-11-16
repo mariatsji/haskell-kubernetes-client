@@ -46,7 +46,6 @@ import qualified Web.FormUrlEncoded as WH
 import qualified Web.HttpApiData as WH
 
 import Data.Function ((&))
-import Data.Monoid ((<>))
 import Data.Text (Text)
 import GHC.Exts (IsString(..))
 
