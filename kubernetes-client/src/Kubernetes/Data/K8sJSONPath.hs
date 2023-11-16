@@ -4,7 +4,6 @@ module Kubernetes.Data.K8sJSONPath where
 import Data.Aeson
 import Data.Aeson.Text
 import Data.JSONPath
-import Data.Monoid     ((<>))
 import Data.Text       as Text
 
 import Control.Applicative  ((<|>))
