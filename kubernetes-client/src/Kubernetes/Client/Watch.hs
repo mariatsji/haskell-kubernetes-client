@@ -85,7 +85,7 @@ withHTTP request manager f = withResponse request manager f'
     f' resp = do
       let p = (from . brRead . responseBody) resp
       f (resp {responseBody = p})
-    from :: IO B.ByteStream -> Q.ByteStream IO ()
+    from :: IO B.ByteString -> Q.ByteStream IO ()
     from io = go
       where
         go = do
