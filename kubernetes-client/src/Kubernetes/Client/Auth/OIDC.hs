@@ -15,6 +15,7 @@ import Data.Either.Combinators
 import Data.Function                         ((&))
 import Data.Map                              (Map)
 import Data.Maybe
+import Data.Monoid                           ((<>))
 import Data.Text
 import Data.Text.Encoding                    (encodeUtf8)
 import Data.Time.Clock.POSIX                 (getPOSIXTime)

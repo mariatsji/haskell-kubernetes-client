@@ -66,6 +66,7 @@ import Control.Applicative (Alternative)
 import Control.Monad.Fail (MonadFail)
 import Data.Function ((&))
 import Data.Foldable(foldlM)
+import Data.Monoid ((<>))
 import Data.Text (Text)
 import Prelude (($), (.), (&&), (<$>), (<*>), Maybe(..), Bool(..), Char, String, fmap, mempty, pure, return, show, IO, Monad, Functor, maybe)
 
