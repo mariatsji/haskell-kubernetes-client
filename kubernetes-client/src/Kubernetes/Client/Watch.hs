@@ -11,7 +11,7 @@ import Control.Monad
 import Control.Monad.Trans (lift)
 import Data.Aeson
 import qualified Data.ByteString as B
-import qualified Data.ByteString.Streaming.Char8 as Q
+import qualified Streaming.ByteString.Char8 as Q
 import qualified Data.Text as T
 import Kubernetes.OpenAPI.Core
 import Kubernetes.OpenAPI.Client
