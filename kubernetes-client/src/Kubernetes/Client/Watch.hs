@@ -43,7 +43,7 @@ eventObject :: WatchEvent a -> a
 eventObject = _eventObject
 
 {-| Dispatch a request setting watch to true. Takes a consumer function
-which consumes the 'Q.ByteString' stream. Following is a simple example which
+which consumes the 'Q.ByteStream' stream. Following is a simple example which
 just streams to stdout. First some setup - this assumes kubernetes is accessible
 at http://localhost:8001, e.g. after running /kubectl proxy/:
 
@@ -68,7 +68,7 @@ dispatchWatch ::
     Manager
     -> KubernetesClientConfig
     -> KubernetesRequest req contentType resp accept
-    -> (Q.ByteString IO () -> IO a)
+    -> (Q.ByteStream IO () -> IO a)
     -> IO a
 dispatchWatch manager config request apply = do
   let watchRequest = applyOptionalParam request (Watch True)
@@ -78,14 +78,14 @@ dispatchWatch manager config request apply = do
 withHTTP ::
   Request
   -> Manager
-  -> (Response (Q.ByteString IO ()) -> IO a)
+  -> (Response (Q.ByteStream IO ()) -> IO a)
   -> IO a
 withHTTP request manager f = withResponse request manager f'
   where
     f' resp = do
       let p = (from . brRead . responseBody) resp
       f (resp {responseBody = p})
-    from :: IO B.ByteString -> Q.ByteString IO ()
+    from :: IO B.ByteStream -> Q.ByteStream IO ()
     from io = go
       where
         go = do
