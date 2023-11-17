@@ -5,7 +5,6 @@ extra-deps:
 - jsonpath-0.2.0.0
 - jwt-0.10.0
 - oidc-client-0.4.0.0
-- hoauth2-1.16.0
 
 packages:
 - kubernetes
