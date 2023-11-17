@@ -4,7 +4,6 @@ module Kubernetes.Client.Auth.TokenFile where
 
 import           Control.Concurrent.STM
 import           Data.Function                  ( (&) )
-import           Data.Monoid                    ( (<>) )
 import           Data.Text                      ( Text )
 import           Data.Time.Clock
 import           Kubernetes.Client.Auth.Internal.Types

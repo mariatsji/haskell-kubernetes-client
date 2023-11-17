@@ -4,7 +4,6 @@ module Kubernetes.Client.Auth.Basic where
 
 import           Data.ByteString.Base64         ( encode )
 import           Data.Function                  ( (&) )
-import           Data.Monoid                    ( (<>) )
 import           Data.Text                      ( Text )
 import           Kubernetes.Client.Auth.Internal.Types
 import           Kubernetes.OpenAPI.Core

@@ -21,7 +21,7 @@ executable in-cluster
       Paths_kubernetes_examples
   hs-source-dirs:
       in-cluster
-  ghc-options: -Wall
+  ghc-options:
   build-depends:
       base <5
     , containers
@@ -40,7 +40,7 @@ executable simple
       Paths_kubernetes_examples
   hs-source-dirs:
       simple
-  ghc-options: -Wall
+  ghc-options:
   build-depends:
       base <5
     , containers
